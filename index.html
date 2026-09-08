@@ -10,23 +10,26 @@
       background-color: #f8f9fa;
       color: #333;
       margin: 0;
-      padding: 40px 20px;
+      padding: 20px 10px;
       display: flex;
       justify-content: center;
+      box-sizing: border-box;
     }
     .container {
+      width: 100%;
       max-width: 650px;
       background: #ffffff;
-      padding: 50px 40px;
+      padding: 40px 30px;
       border: 1px solid #dee2e6;
       box-shadow: 0 4px 6px rgba(0,0,0,0.05);
       line-height: 1.8;
+      box-sizing: border-box;
     }
     h1 {
       text-align: center;
       font-size: 24px;
       letter-spacing: 2px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
       padding-bottom: 20px;
       border-bottom: 2px solid #212529;
     }
@@ -34,7 +37,7 @@
       font-size: 16px;
       text-align: justify;
       word-break: keep-all;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
     .footer {
       text-align: center;
@@ -47,6 +50,23 @@
     .company-info {
       font-weight: 600;
       line-height: 1.9;
+    }
+
+    /* 모바일 화면 최적화 미디어 쿼리 */
+    @media screen and (max-width: 480px) {
+      body {
+        padding: 10px 5px;
+      }
+      .container {
+        padding: 30px 20px;
+      }
+      h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+      .content {
+        font-size: 15px;
+      }
     }
   </style>
 </head>
